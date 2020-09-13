@@ -10,7 +10,7 @@
       
 - Cucumber with Maven and Java are used to build automation framework, so to run this script on your environment should install Java version 1.8 or higher and Apache Maven as prerequisite.
 - Cloning repository to your IDE e.g Eclipse, run above scenarios with right click **TestRunner.java** file (path: /com.tiket/src/test/java/StepDefinitions) and Run As **JUnit Test**. 
-- We can run test via **CLI** with command prompt: **mvn test clean** under root path e.g C:\Users\Pavilion\eclipse-cucumber\com.tiket>**mvn test clean**
+- We can run test via **CLI** with command prompt: **mvn test clean** under root path e.g C:\Users\Pavilion\Downloads\skillTestTiketdotCom-master\skillTestTiketdotCom-master\com.tiket>**mvn test clean**
 
       - For Feature Product Flight, interval repeat execution test for success case around 2 hours as because booking transaction will expire in 2 hours.
             
