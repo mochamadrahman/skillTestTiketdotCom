@@ -4,9 +4,9 @@
 
 - This Repository consist of automation script using BDD style with Page Object pattern which using Desktop Web platform and cover scenario :
 
-      - Product Flight: Create transaction with Virtual Account for domestic round trip with xx transit and login with email.
+      - Product Flight: Create transaction with Virtual Account for domestic round trip with xx transit and login with email, be represented by ProductFlight.feature file.
       
-      - Product Train: Create transaction with non-instant payment for one-way trip, xx adults and xx infants and select seats.
+      - Product Train: Create transaction with non-instant payment for one-way trip, xx adults and xx infants and select seats, be represented by ProductTrain.feature file.
       
 - Cucumber with Maven and Java are used to build automation framework, so to run this script on your environment should install Java version 1.8 or higher and Apache Maven as prerequisite.
 - Cloning repository to your IDE e.g Eclipse, run above scenarios with right click **TestRunner.java** file (path: /com.tiket/src/test/java/StepDefinitions) and Run As **JUnit Test**. 
