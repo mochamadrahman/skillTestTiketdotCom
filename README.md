@@ -12,7 +12,7 @@
 - Cloning repository to your IDE e.g Eclipse, run above scenarios with right click **TestRunner.java** file (path: /com.tiket/src/test/java/StepDefinitions) and Run As **JUnit Test**. 
 - We can run test via **CLI** with command prompt: **mvn test clean** under root path e.g C:\Users\Pavilion\Downloads\skillTestTiketdotCom-master\skillTestTiketdotCom-master\com.tiket>**mvn test clean**
 
-      - For Feature Product Flight, interval repeat execution test for success case around 2 hours as because booking transaction will expire in 2 hours.
+      - For Feature Product Flight, interval repeat execution test for success case around 2 hours and 30 minutes as because booking transaction will expire in 2 hours and 30 minutes.
             
       - For Feature Product Train, interval repeat execution test for success case around 30 minutes as because booking transaction will expire in 30 minutes. There is another restriction for non-instant payment e.g Bank Transfer where only available from 07 AM till 8 PM.
 
