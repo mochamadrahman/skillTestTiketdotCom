@@ -118,7 +118,7 @@ public class ProductTrainSteps {
 		train.clickSearch();
 		sleep(3000);
 
-		train.randomPopUpNotif();
+		train.randomPopUpNotifCovid19();
 		
 		/* perform choose train */
 		train.chooseDepartureTrain();
