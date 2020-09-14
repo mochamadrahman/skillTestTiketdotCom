@@ -115,12 +115,12 @@ public class ProductFlightSteps {
 		sleep(3000);
 		flight.clickUnderstood();
 		sleep(3000);
-		flight.randomPopUpNotif();
+		flight.randomPopUpNotifCovid19();
 		flight.oneTransit();
 		sleep(5000);
 		flight.chooseDepartureFlight();
 		sleep(3000);
-		flight.randomPopUpNotif();
+		flight.randomPopUpNotifCovid19();
 		flight.oneTransit();
 		sleep(3000);
 		flight.chooseReturnFlight();
