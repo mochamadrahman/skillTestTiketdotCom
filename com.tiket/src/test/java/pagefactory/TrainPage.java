@@ -2,12 +2,14 @@ package pagefactory;
 
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TrainPage {
@@ -154,30 +156,17 @@ public class TrainPage {
 
 	/* handle popup notification related covid19 */
 
-	public void randomPopUpNotif() {
+	public void randomPopUpNotifCovid19() {
 		try {
-			WebDriverWait winwait = new WebDriverWait(driver, 3);
-			String mainWindow = driver.getWindowHandle();
-
-			// wait for 2 windows and get the handles
-			Set<String> handles = winwait.until((WebDriver drv) -> {
-				Set<String> items = drv.getWindowHandles();
-				return items.size() == 2 ? items : null;
-			});
-
-			// set the context on the last opened window
-			handles.remove(mainWindow);
-			driver.switchTo().window(handles.iterator().next());
-
-			// close the window
-			driver.close();
-
-			// set the context back to the main window
-			driver.switchTo().window(mainWindow);
-
-		} catch (TimeoutException ex) {
-			System.out.println("No window Covid19 notification present within 3 seconds");
-		}
+			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			    wait.until(ExpectedConditions.alertIsPresent());
+		        Alert simpleAlert = driver.switchTo().alert();
+		        simpleAlert.accept();
+		        System.out.println("Window Covid19 notification accepted");
+			
+			} catch (TimeoutException ex) {
+					System.out.println("No window Covid19 notification present within 10 seconds");
+				}
 	}
 
 	public void inputPhoneNumber() {
